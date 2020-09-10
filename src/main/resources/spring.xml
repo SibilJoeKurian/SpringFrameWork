@@ -3,6 +3,9 @@
         "http://www.springframework.org/dtd/spring-beans.dtd">
 <beans>
     <bean id="triangle" class="com.example.demo.Triangle">
-    <property name="triangleType" value="equilateral"/>
+        <constructor-arg type="String" value="iso " />
+        <constructor-arg type="int" value="1"/>
+      <!--  <property name="triangleType" value="equilateral"/> -->
+
     </bean>
 </beans>
