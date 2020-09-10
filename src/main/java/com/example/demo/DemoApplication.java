@@ -9,8 +9,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class DemoApplication {
 
 	public static void main(String[] args) {
-		//ApplicationContext context= new ApplicationContext("spring.xml");
 		SpringApplication.run(DemoApplication.class, args);
+		ClassPathXmlApplicationContext context= new ClassPathXmlApplicationContext("spring.xml");
+		Triangle triangle=(Triangle) context.getBean("triangle");
+		triangle.draw();
 	}
 
 }

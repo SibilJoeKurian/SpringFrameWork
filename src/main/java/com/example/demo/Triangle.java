@@ -7,10 +7,10 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 public class Triangle {
-private Point p1;
-private Point p2;
-private Point p3;
+String triangleType;
+public void draw(){
+    System.out.println("This "+triangleType+"is drawn");
+}
+
 }
