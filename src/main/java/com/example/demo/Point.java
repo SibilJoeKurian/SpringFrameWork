@@ -1,5 +1,13 @@
 package com.example.demo;
 
-public class Point {
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
+@Getter
+@Setter
+@ToString
+public class Point {
+int a;
+int b;
 }

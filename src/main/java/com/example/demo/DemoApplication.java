@@ -12,8 +12,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 		ClassPathXmlApplicationContext context= new ClassPathXmlApplicationContext("spring.xml");
 		Triangle triangle=(Triangle) context.getBean("triangle");
-		triangle.draw();
-		triangle.check_draw();
+		triangle.print();
 	}
 
 }

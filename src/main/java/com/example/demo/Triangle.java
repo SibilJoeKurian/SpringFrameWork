@@ -9,16 +9,13 @@ import lombok.Setter;
 @Setter
 @Getter
 public class Triangle {
-String triangleType;
-int id;
-public Triangle(int id,String triangleType){
-    this.id=id;
-    this.triangleType=triangleType;
-}
-public void draw(){
-    System.out.println("This "+triangleType+ " is drawn with id "+id);
-}
-public void check_draw(){
-    System.out.println("Check draw");
+Point p1;
+Point p2;
+Point p3;
+
+public void print(){
+    System.out.println(p1.toString());
+    System.out.println(p2.toString()) ;
+    System.out.println(p3.toString());
 }
 }
