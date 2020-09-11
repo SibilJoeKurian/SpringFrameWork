@@ -3,9 +3,16 @@
         "http://www.springframework.org/dtd/spring-beans.dtd">
 <beans>
     <bean id="triangle" class="com.example.demo.Triangle">
-        <property name="p1" ref="pointA"/>
-        <property name="p2" ref="pointB"/>
-        <property name="p3" ref="pointC"/>
+    <property name="pointList">
+        <list>
+            <ref bean="pointA"/>
+            <ref bean="pointB"/>
+            <bean class="com.example.demo.Point">
+                <property name="a" value="10"/>
+                <property name="b" value="20"/>
+            </bean>
+        </list>
+    </property>
     </bean>
 
     <bean id="pointA" class="com.example.demo.Point">

@@ -5,17 +5,15 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 
 @Setter
 @Getter
 public class Triangle {
-Point p1;
-Point p2;
-Point p3;
+List<Point> pointList;
 
 public void print(){
-    System.out.println(p1.toString());
-    System.out.println(p2.toString()) ;
-    System.out.println(p3.toString());
+    pointList.forEach(point -> System.out.println(point.toString()));
 }
 }
